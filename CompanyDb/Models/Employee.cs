@@ -49,5 +49,7 @@ namespace CompanyDb.Models
         public ICollection<BorrowedItem> BorrowedItems { get; set; }
         public ICollection<EmployeesChild> Children { get; set; }
         public ICollection<Vacation> Vacations { get; set; }
+        public ICollection<HealthCheck> HealthChecks { get; set; }
+        public ICollection<SickLeave> SickLeaves { get; set; }
     }
 }
