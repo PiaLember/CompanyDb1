@@ -51,5 +51,6 @@ namespace CompanyDb.Models
         public ICollection<Vacation> Vacations { get; set; }
         public ICollection<HealthCheck> HealthChecks { get; set; }
         public ICollection<SickLeave> SickLeaves { get; set; }
+        public ICollection<AccessLevel> AccessLevels { get; set; }
     }
 }
