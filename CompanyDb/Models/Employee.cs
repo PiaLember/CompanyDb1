@@ -35,5 +35,10 @@ namespace CompanyDb.Models
 
         [StringLength(100)]
         public string? Comment { get; set; }
+
+        [ForeignKey("Department")]
+        public int DepartmentId { get; set; }
+
+        public required Department Department { get; set; }
     }
 }
