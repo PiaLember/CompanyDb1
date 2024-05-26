@@ -40,5 +40,9 @@ namespace CompanyDb.Models
         public int DepartmentId { get; set; }
 
         public required Department Department { get; set; }
+        [ForeignKey("JobTitle")]
+        public int JobTitleId { get; set; }
+
+        public JobTitle JobTitle { get; set; }
     }
 }
