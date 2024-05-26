@@ -20,11 +20,6 @@ namespace CompanyDb.Models
 
         [StringLength(100)]
         public string? Comment { get; set; }
-
-        [ForeignKey("WorkTime")]
-        public int WorkTimeId { get; set; }
-        public WorkTime WorkTime { get; set; }
         
-        public ICollection<Employee> Employees { get; set; }
     }
 }

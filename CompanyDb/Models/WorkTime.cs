@@ -12,6 +12,8 @@ namespace CompanyDb.Models
 
         [ForeignKey("Employee")]
         public int EmployeeId { get; set; }
+        [ForeignKey("JobTitle")]
+        public int JobTitleId { get; set; }
 
         public required DateTime StartingDate { get; set; }
 
@@ -20,7 +22,7 @@ namespace CompanyDb.Models
         [StringLength(100)]
         public string? Comment { get; set; }
         
-        public ICollection<JobTitle> JobTitles { get; set; }
+        public ICollection<JobTitle>? JobTitles { get; set; }
 
     }
 }

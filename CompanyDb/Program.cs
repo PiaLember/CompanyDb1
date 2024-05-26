@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using CompanyDb.Models;
-using StoredProc.Data;
+using CompanyDb.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
