@@ -45,5 +45,6 @@ namespace CompanyDb.Models
         public JobTitle JobTitle { get; set; }
 
         public ICollection<WorkTime> WorkTimes { get; set; }
+        public ICollection<Request> Requests { get; set; }
     }
 }
