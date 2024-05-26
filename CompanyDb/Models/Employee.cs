@@ -15,5 +15,25 @@ namespace CompanyDb.Models
 
         [StringLength(20)]
         public required string LastName { get; set; }
+
+        public int PersonalIdentificationNumber { get; set; }
+
+        [StringLength(100)]
+        public string? ContactAddress { get; set; }
+
+        public int ContactPhoneNumber { get; set; }
+
+        [StringLength(30)]
+        public string? ContactEmail { get; set; }
+
+        public DateTime AtWorkSince { get; set; }
+
+        public DateTime? AtWorkUntil { get; set; }
+
+        [Column(TypeName = "decimal(18, 2)")]
+        public decimal Salary { get; set; }
+
+        [StringLength(100)]
+        public string? Comment { get; set; }
     }
 }
