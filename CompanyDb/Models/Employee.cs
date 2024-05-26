@@ -48,5 +48,6 @@ namespace CompanyDb.Models
         public ICollection<Request> Requests { get; set; }
         public ICollection<BorrowedItem> BorrowedItems { get; set; }
         public ICollection<EmployeesChild> Children { get; set; }
+        public ICollection<Vacation> Vacations { get; set; }
     }
 }
